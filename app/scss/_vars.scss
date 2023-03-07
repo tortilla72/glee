@@ -1,0 +1,36 @@
+$default: #243f4d;
+$menu: #436372;
+$title: #191919;
+$bg: #fef7f0;
+$search: #edf1f4;
+$bg-cover :#fcd7b6;
+$accent: #a3bbc8;
+$footer: #7b7b7b;
+$footer-title: #1f2044;
+$placeholder: #234969;
+$line: #dae4e9;
+
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-400 {
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+}

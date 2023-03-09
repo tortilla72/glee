@@ -10,4 +10,10 @@ $(function () {
     $(this).find('.menu__dropdown-list').removeClass('menu__dropdown-list--active');
   });
 
+  $('.cover__inner').slick({
+    arrows: false,
+    dots: true,
+    fade: true,
+  });
+
 });

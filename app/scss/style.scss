@@ -362,6 +362,136 @@
   }
 }
 
+/******* PRODUCT ******/
+.product {
+  padding: 55px 0 120px;
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__filter-item {
+    margin: 0 15px;
+  }
+
+  &__filter-btn {
+    padding: 0;
+    background: none;
+    border: none;
+    @extend %dmsans-700;
+    font-size: 1.6rem;
+    color: #8b8b8b;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  &__filter-btn:hover,
+  &__filter-btn--active {
+    color: $title;
+  }
+
+  &__box {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 45px 30px;
+  }
+}
+
+.product-item {
+  max-width: 270px;
+  padding: 35px 15px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+  &:hover {
+    .product-item__link-box {
+      transform: translateY(0);
+    }
+  }
+
+  &__img-box {
+    position: relative;
+    margin-bottom: 45px;
+    height: 205px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  &__images {
+    object-fit: cover;    
+  }
+
+  &__link-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: 0 auto;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(300%);
+    transition: all .3s;
+  }
+
+  &__link {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    transition: all .3s;
+
+    path {
+      transition: all .3s;
+    }
+  }
+
+  &__link:hover {
+    background-color: $accent;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2px;
+    @extend %dmsans-500;
+    font-size: 1.6rem;
+    line-height: 2.5;
+  }
+
+  &__price {
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    @extend %dmsans-700;
+    line-height: 1;
+    color: $accent;
+  }
+
+  &__price-new {
+    padding: 0 10px;
+  }
+
+  &__price-old {
+    padding: 0 10px;
+    @extend %dmsans-400;
+    text-decoration: line-through;
+  }
+}
+
 /******* FOOTER ******/
 .footer {
   color: $footer;

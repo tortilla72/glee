@@ -37,3 +37,10 @@ textarea {
   outline-width: 1px;
 }
 
+.title {
+  margin-bottom: 9px;
+  @extend %dmsans-700;
+  font-size: 3.6rem;
+  text-align: center;
+  color: $title;
+}

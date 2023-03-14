@@ -10,7 +10,7 @@ body {
   @extend %rubik-400;
   font-size: 1.6rem;
   line-height: 1.875;
-  color: $default;  
+  color: $default;
 }
 
 .main {
@@ -43,4 +43,29 @@ textarea {
   font-size: 3.6rem;
   text-align: center;
   color: $title;
+}
+
+.page-filter {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin: 0 15px;
+  }
+
+  &__btn {
+    padding: 0;
+    background: none;
+    border: none;
+    @extend %dmsans-700;
+    font-size: 1.6rem;
+    color: #8b8b8b;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  &__btn:hover,
+  &__btn--active {
+    color: $title;
+  }
 }

@@ -717,6 +717,21 @@
   }
 }
 
+/******* PARTNERS ******/
+.partners {
+  background-color: $bg;
+  padding-bottom: 50px;
+
+  &__list {
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
 /******* FOOTER ******/
 .footer {
   color: $footer;
